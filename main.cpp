@@ -5,7 +5,7 @@
 int main()
 {
     auto logger = spdlog::stdout_logger_mt("console");
-    logger->info("build  {}, Hello World!", version());
-
+    logger->info("build {}", version());
+    logger->info("Hello, World!");
     return 0;
 }
